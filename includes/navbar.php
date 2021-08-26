@@ -1,7 +1,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" style="text-decoration: none;">
-            <h1>Bem vindo <?php echo strtoupper($_SESSION['usuario'])?></h1>
+            <h1>Bem vindo <?php echo strtoupper($_SESSION['usuario']) ?></h1>
         </a>
 
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -11,44 +11,43 @@
         </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div id="navbar" class="navbar-menu">
         <div class="navbar-start">
             <a class="navbar-item">
-                Home
+                Movimento G$
             </a>
 
             <a class="navbar-item">
-                Documentation
+                Movimento R$
             </a>
+
+            <a class="navbar-item">
+                Movimento US$
+            </a>
+        </div>
+
+        <div class="navbar-end">
 
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">
-                    More
+                    Opções
                 </a>
 
                 <div class="navbar-dropdown">
                     <a class="navbar-item">
-                        About
+                        cadastar usuario
                     </a>
-                    <a class="navbar-item">
-                        Jobs
-                    </a>
-                    <a class="navbar-item">
-                        Contact
-                    </a>
+
                     <hr class="navbar-divider">
                     <a class="navbar-item">
-                        Report an issue
+                        contatar o desenvolvedor
                     </a>
                 </div>
             </div>
-        </div>
-
-        <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
                     <a class="button is-primary" href="login/logout.php">
-                    <Strong>Sair</Strong>
+                        <Strong>Sair</Strong>
                     </a>
                 </div>
             </div>
