@@ -1,7 +1,12 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" style="text-decoration: none;">
-            <h1>Bem vindo <?php echo strtoupper($_SESSION['usuario']) ?></h1>
+            <center>
+                <h1>Bem vindo <?php echo strtoupper($_SESSION['usuario']);
+                                $DateAndTime = date('d/m/Y', time());
+                                echo "<br>Hoje é dia: $DateAndTime";
+                                ?></h1>
+            </center>
         </a>
 
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -14,15 +19,11 @@
     <div id="navbar" class="navbar-menu">
         <div class="navbar-start">
             <a class="navbar-item">
-                Movimento G$
+                Manduvi
             </a>
 
             <a class="navbar-item">
-                Movimento R$
-            </a>
-
-            <a class="navbar-item">
-                Movimento US$
+                Pinturas
             </a>
         </div>
 
