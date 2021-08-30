@@ -1,4 +1,5 @@
-<div id="modal-id" class="modal  modal-fx-fadeInScale">
+<!-- Modal de cadastro -->
+<div id="cadastar_modal" class="modal  modal-fx-fadeInScale">
     <div class="modal-background"></div>
     <div class="modal-card">
         <header class="modal-card-head">
@@ -25,7 +26,7 @@
                     <label class="title is-4">Moeda:</label>
                     <div class="select is-rounded is-primary">
                         <select>
-                            <option>Gurani</option>
+                            <option>Guarani</option>
                             <option>Real</option>
                             <option>Dolar</option>
                         </select>
@@ -45,3 +46,4 @@
         </footer>
     </div>
 </div>
+

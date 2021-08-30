@@ -25,6 +25,10 @@
             <a class="navbar-item">
                 Pinturas
             </a>
+
+            <a class="navbar-item">
+                Fechar caixas
+            </a>
         </div>
 
         <div class="navbar-end">

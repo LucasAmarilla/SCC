@@ -1,24 +1,28 @@
 <?php
-include 'cadastrar.php';
+include 'cadastro.php';
 ?>
 <main class="container has-text-centered">
     <br>
     <section>
         <center>
-            <button class="button modal-button is-white is-rounded" data-target="modal-id" aria-haspopup="true">
-                <ion-icon name="add-circle-outline" size='large'></ion-icon> Cadastrar movimento
+            <h1 class="title is-1">SCC</h1>
+            <h2 class="subtitle">Sistema de controle de caixa</h2>
+            <button class="button modal-button is-white is-rounded" data-target="cadastar_modal" aria-haspopup="true">
+                <ion-icon name="add-circle-outline" size='large'></ion-icon> cadastrar movimento
             </button>
-            <a href="cadastrar.php">
-                <button class="button is-white is-rounded">
-                    <ion-icon name="search-circle-outline" size='large'></ion-icon> consultar movimento
-                </button>
-            </a>
+
+            <button class="button modal-button is-white is-rounded" data-target="consulta_modal" aria-haspopup="true">
+                <ion-icon name="search-circle-outline" size='large'></ion-icon> consultar movimento
+            </button>
+
             <button class="button modal-button is-white is-rounded" data-target="modal-id" aria-haspopup="true">
-                <ion-icon name="refresh-circle-outline" size='large'></ion-icon> atualizar movimento
+                <ion-icon name="refresh-circle-outline" size='large'></ion-icon> modificar movimento
             </button>
             <button class="button modal-button is-white is-rounded" data-target="modal-id" aria-haspopup="true">
                 <ion-icon name="close-circle-outline" size='large'></ion-icon> deletar movimento
             </button>
+            <br>
+            <br>
         </center>
     </section>
 </main>
