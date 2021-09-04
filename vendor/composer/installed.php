@@ -1,23 +1,24 @@
-<?php return array(
-    'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'type' => 'library',
-        'install_path' => __DIR__ . '/../../',
-        'aliases' => array(),
-        'reference' => NULL,
-        'name' => 'manduvi/scc',
-        'dev' => true,
+<?php return array (
+  'root' => 
+  array (
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
+    'aliases' => 
+    array (
     ),
-    'versions' => array(
-        'manduvi/scc' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../../',
-            'aliases' => array(),
-            'reference' => NULL,
-            'dev_requirement' => false,
-        ),
+    'reference' => '99e4b8701876cf37885996b36c212d715d7e0143',
+    'name' => 'manduvi/scc',
+  ),
+  'versions' => 
+  array (
+    'manduvi/scc' => 
+    array (
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '99e4b8701876cf37885996b36c212d715d7e0143',
     ),
+  ),
 );

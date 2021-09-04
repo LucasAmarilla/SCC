@@ -8,7 +8,7 @@
         </header>
         <section class="modal-card-body">
             <div class="box">
-                <form action="">
+                <form action="" method="POST">
                     <label for="sel1" class="title is-4">Tipo: </label>
                     <div id="sel1" class="select is-rounded is-primary">
                         <select>

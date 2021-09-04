@@ -1,8 +1,14 @@
 <?php
-session_start();
-$_SESSION['caixa'] = 'Manduvi';
-include('login/verifica_login.php');
+//back_end
 
+session_start();
+$_SESSION['caixa'] = 'Manduvi'; //caixa_default
+require 'vendor/autoload.php'; //faz_o_autoload_de_classes
+include 'login/verifica_login.php'; //verificador_de_login
+include 'includes/modais_crud/cadastro.php'; //modal_cadastro
+
+
+//visual_elements
 include('includes/header.php');
 include('includes/main.php');
 include('includes/footer.php');

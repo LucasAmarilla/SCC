@@ -1,6 +1,4 @@
-<?php
-include 'cadastro.php';
-?>
+
 <main class="container has-text-centered">
     <br>
     <section>
