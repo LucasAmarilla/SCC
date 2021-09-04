@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['caixa'] = 'Manduvi';
 include('login/verifica_login.php');
 
 include('includes/header.php');

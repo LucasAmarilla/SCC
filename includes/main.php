@@ -7,6 +7,7 @@ include 'cadastro.php';
         <center>
             <h1 class="title is-1">SCC</h1>
             <h2 class="subtitle">Sistema de controle de caixa</h2>
+            <h2 class="subtitle">Você está no caixa de <?php echo $_SESSION['caixa']; ?></h2>
             <button class="button modal-button is-white is-rounded" data-target="cadastar_modal" aria-haspopup="true">
                 <ion-icon name="add-circle-outline" size='large'></ion-icon> cadastrar movimento
             </button>

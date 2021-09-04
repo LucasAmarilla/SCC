@@ -1,3 +1,14 @@
+<?php
+include 'funcoes/troca_caixa.php';
+if (isset($_GET['trocaManduvi'])) {
+    trocaManduvi();
+}
+if (isset($_GET['TrocaPinturas'])) {
+    trocaPinturas();
+}
+?>
+
+
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" style="text-decoration: none;">
@@ -18,13 +29,10 @@
 
     <div id="navbar" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item">
-                Manduvi
-            </a>
 
-            <a class="navbar-item">
-                Pinturas
-            </a>
+            <a class="navbar-item" href='painel.php?trocaPinturas=true'>Manduvi</a>
+
+            <a class="navbar-item" href='painel.php?trocaManduvi=true'>Pinturas</a>
 
             <a class="navbar-item">
                 Fechar caixas
