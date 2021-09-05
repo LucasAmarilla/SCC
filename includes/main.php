@@ -1,4 +1,3 @@
-
 <main class="container has-text-centered">
     <br>
     <section>

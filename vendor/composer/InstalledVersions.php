@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '99e4b8701876cf37885996b36c212d715d7e0143',
+    'reference' => 'efd5ffb455aad79129f675fe015a772a188ad5f5',
     'name' => 'manduvi/scc',
   ),
   'versions' => 
@@ -42,7 +42,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '99e4b8701876cf37885996b36c212d715d7e0143',
+      'reference' => 'efd5ffb455aad79129f675fe015a772a188ad5f5',
     ),
   ),
 );
