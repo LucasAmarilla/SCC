@@ -8,7 +8,7 @@
         </header>
         <section class="modal-card-body">
             <div class="box">
-                <form action="crud/cadastrar.php" method="POST">
+                <form action="cadastrar.php" method="POST">
                     <label class="title is-4">Data:</label>
                     <input class="is-rounded is-primary" type="date" id="data" name="data" min="2021-01-01" max="2090-01-30">
                     <br>

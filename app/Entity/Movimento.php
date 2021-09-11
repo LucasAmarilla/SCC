@@ -18,7 +18,7 @@ class Movimento
     {
         //inserir no banco
         $obDatabase = new Database('movimentos_' . $_SESSION['caixa']);
-        $this->id = $obDatabase -> insert([
+        $this->id = $obDatabase->insert([
             'data' => $this->data,
             'tipo' => $this->tipo,
             'motivo' => $this->motivo,
@@ -26,9 +26,15 @@ class Movimento
             'valor' => $this->valor
 
         ]);
-        
-        //retornar sucesso
 
-        return true; 
+        //retornar sucesso
+        return true;
     }
+
+
+   //consulta de dados 
+   public function getMovimentos($where = null, $order = null, $limit = null)
+   {
+       //return (new Database)
+   } 
 }

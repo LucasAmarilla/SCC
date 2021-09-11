@@ -2,8 +2,9 @@
 //back_end
 
 session_start();
-$_SESSION['caixa'] = 'manduvi'; //caixa_default
-require 'vendor/autoload.php'; //faz_o_autoload_de_classes
+if (!isset($_SESSION['caixa'])) {
+    $_SESSION['caixa'] = 'manduvi'; //caixa_default
+}
 include 'login/verifica_login.php'; //verificador_de_login
 include 'includes/modais_crud/formulario_cadastro.php'; //modal_cadastro
 

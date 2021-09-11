@@ -5,6 +5,10 @@ namespace App\Db;
 use \PDO;
 use PDOException;
 
+session_start();
+
+
+
 class database
 {
     //dados_do_banco
@@ -12,11 +16,10 @@ class database
     const USER = 'root';
     const PASS = '';
     const NAME = 'SCC';
- 
+
     //nome_da_tabela_manipulada
     private $table;
-
-    //instacia de conexão
+    //var de conexão
     private $connection;
 
     //construtor
@@ -32,18 +35,19 @@ class database
             $this->connection = new PDO('mysql:host=' . self::HOST . ';dbname=' . self::NAME, self::USER, self::PASS); //conexao_com_o_db
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //fatal_se_der_errado
         } catch (PDOException $e) {
-            die('Ocorreu um erro na conexão com o banco');
+            die('Error: ' . $e->getMessage());
         }
     }
 
     //executa dentro do banco de dados
-    public function execute($query,$params = []){
-        try{
+    public function execute($query, $params = [])
+    {
+        try {
             $statement = $this->connection->prepare($query);
-            $statement ->execute($params);
+            $statement->execute($params);
             return $statement;
-        }catch (PDOException $e) {
-            die('Ocorreu um erro na conexão com o banco');
+        } catch (PDOException $e) {
+            die('Error: ' . $e->getMessage());
         }
     }
     //recebe os dados por array
@@ -53,11 +57,12 @@ class database
         $binds = array_pad([], count($fields), '?');
 
         //monta a query
-        $query = 'INSERT INTO ' . $this->table . ' (' . implode(',', $fields) . ') VALUES (' . implode(',', $binds) .')';
+        $query = 'INSERT INTO ' . $this->table . ' (' . implode(',', $fields) . ') VALUES (' . implode(',', $binds) . ')';
 
-        $this->execute($query,array_values($values));
+        //executa o insert
+        $this->execute($query, array_values($values));
 
+        //retorna o id    
         return $this->connection->lastInsertId();
-
     }
 }
