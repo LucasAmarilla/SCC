@@ -50,7 +50,34 @@
     </div>
 </div>
 
-<?php
+<!-- Modal de consulta -->
+<div id="consultar_modal" class="modal  modal-fx-fadeInScale" ;>
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Consultar Movimento</p>
+        </header>
+        <section class="modal-card-body">
+            <div class="box">
+                <center>
+                    <form action="consultar.php" method="POST">
+                        <label class="title is-4">Data inicial:</label>
+                        <input class="is-rounded is-primary" type="date" id="data" name="data" min="2021-01-01" max="2090-01-30">
+                        <br>
+                        <br>
+                        <label class="title is-4">Data final:</label>
+                        <input class="is-rounded is-primary" type="date" id="data" name="data" min="2021-01-01" max="2090-01-30">
+                        <br>
+                        <br>
+                        <button type="submit" class="button is-rounded is-primary">Consultar movimento</button>
+                </center>
+                </form>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- Modal de alteracao -->
 
 
-?>
+<!-- Modal de delete -->

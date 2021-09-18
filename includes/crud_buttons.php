@@ -9,7 +9,7 @@
                 <ion-icon name="add-circle-outline" size='large'></ion-icon> cadastrar movimento
             </button>
 
-            <button class="button modal-button is-white is-rounded" data-target="consulta_modal" aria-haspopup="true">
+            <button class="button modal-button is-white is-rounded" data-target="consultar_modal" aria-haspopup="true">
                 <ion-icon name="search-circle-outline" size='large'></ion-icon> consultar movimento
             </button>
 

@@ -1,7 +1,8 @@
 <?php
 //back_end
-
 session_start();
+
+//Verificador de caixa
 if (!isset($_SESSION['caixa'])) {
     $_SESSION['caixa'] = 'manduvi'; //caixa_default
 }
@@ -9,9 +10,9 @@ include 'login/verifica_login.php'; //verificador_de_login
 include 'includes/modais_crud/formulario_cadastro.php'; //modal_cadastro
 
 
-//visual_elements
+//Elementos da UI
 include('includes/header.php');
-include('includes/main.php');
+include('includes/crud_buttons.php');
 include('includes/footer.php');
 
 ?>
